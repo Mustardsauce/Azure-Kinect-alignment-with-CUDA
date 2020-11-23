@@ -16,7 +16,7 @@ I tested this on Windows 10. If you wanna use this on Linux, you could compile t
 - Azure kinect SDK
 - CUDA : 10.1
 
-# Processing time (CPU vs GPU) (unit : ms)
+# Processing time [CPU vs GPU] (unit : ms)
 ![cpu vs gpu](https://user-images.githubusercontent.com/23024027/99947451-5863c580-2dbb-11eb-9ed5-8a574a468ac0.png)
 
 
