@@ -1,6 +1,6 @@
 # Azure_kinect_alignment_with_CUDA
 
-I did the alignment between color and depth image(Azure kinect dk) with CUDA. It takes so long time because it requires the 2D-3D conversion.
+I did the alignment between color and depth image(Azure kinect dk) with CUDA. It takes so long time because it is necessary to tranform the 2D-3D conversion.
 I tested this on Windows 10. If you wanna use is on Linux, you could compile this to nvcc without cmake (with dependency).
 
 # The environment for testing is below.
