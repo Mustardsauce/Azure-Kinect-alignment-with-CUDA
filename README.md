@@ -4,7 +4,7 @@ I did the alignment between color and depth image(Azure kinect dk) with CUDA. It
 I tested this on Windows 10. If you wanna use this on Linux, you could compile this to nvcc without cmake (with dependency).
 
 # The environment for testing is below.
-- Azure kinect ( Color : [1280 x 720], Depth : [640 x 576])
+- Azure kinect "Color : [1280 x 720], Depth : [640 x 576]"
 - OS : Windows 10 (not Linux)
 - IDE : Visual studio 2015 community
 - CPU : Intel(R) Core(TM) i7-9700K (3.60GHz)
