@@ -16,9 +16,13 @@ I tested this on Windows 10. If you wanna use this on Linux, you could compile t
 - Azure kinect SDK
 - CUDA : 10.1
 
-# color to depth
+# Processing time (CPU vs GPU) (unit : ms)
+![cpu vs gpu](https://user-images.githubusercontent.com/23024027/99947451-5863c580-2dbb-11eb-9ed5-8a574a468ac0.png)
+
+
+# Example - color to depth
 ![color to depth](https://user-images.githubusercontent.com/23024027/99944744-bfcb4680-2db6-11eb-91b1-54695ab364f0.png)
 
 
-# depth to color
+# Example - depth to color
 ![depth to color](https://user-images.githubusercontent.com/23024027/99944767-cf4a8f80-2db6-11eb-8b82-753f0c907e90.png)
