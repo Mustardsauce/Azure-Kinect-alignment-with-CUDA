@@ -7,7 +7,7 @@ The code provided by Azure kinect SDK can only use BGRA32 which is one of kind o
 
 
 # The environment for testing is below
-- Azure kinect : "Color : [1280 x 720], Depth : [640 x 576]"
+- Azure kinect : <Color : [1280 x 720], Depth : [640 x 576]>
 - OS : Windows 10 (NOT Linux)
 - IDE : Visual studio 2015 community
 - CPU : Intel(R) Core(TM) i7-9700K (3.60GHz)
