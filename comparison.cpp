@@ -35,7 +35,7 @@ int main(void)
 	k4a_device_t device = NULL;
 	uint32_t device_count = k4a_device_get_installed_count();
 
-	const int depth_sacle_for_visualization = 100;
+	const int depth_scale_for_visualization = 100;
 
 	if (device_count == 0)
 	{
@@ -165,7 +165,7 @@ int main(void)
 				depth2color_alignment = cv::Mat(cv::Size(color_calibration.resolution_width, color_calibration.resolution_height), CV_16UC1);
 				depth2color.align_depth_to_color((ushort*)depth2color_alignment.data, (ushort*)distorted_depthFrame.data, depth_scale, calibration);
 
-				cv::imshow("depth to color (GPU)", depth2color_alignment * depth_sacle_for_visualization);
+				cv::imshow("depth to color (GPU)", depth2color_alignment * depth_scale_for_visualization);
 
 				cudaEventRecord(stop, 0);
 				cudaEventSynchronize(stop);
@@ -193,7 +193,7 @@ int main(void)
 					{
 						cv::Mat depth2color_alignment = k4a_get_mat(transformed_depth_image);
 
-						cv::imshow("depth to color (CPU)", depth2color_alignment * depth_sacle_for_visualization);
+						cv::imshow("depth to color (CPU)", depth2color_alignment * depth_scale_for_visualization);
 					}
 
 					k4a_image_release(transformed_depth_image);
@@ -207,7 +207,7 @@ int main(void)
 			}
 
 			cv::imshow("COLOR", distorted_colorFrame);
-			cv::imshow("DEPTH", distorted_depthFrame * depth_sacle_for_visualization);
+			cv::imshow("DEPTH", distorted_depthFrame * depth_scale_for_visualization);
 			
 			k4a_image_release(depth_image);
 			k4a_image_release(color_image);
