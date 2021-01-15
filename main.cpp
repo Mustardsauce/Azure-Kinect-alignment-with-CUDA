@@ -24,7 +24,7 @@ int main(void)
 	k4a_device_t device = NULL;
 	uint32_t device_count = k4a_device_get_installed_count();
 
-	const int depth_sacle_for_visualization = 100;
+	const int depth_scale_for_visualization = 100;
 
 	if (device_count == 0)
 	{
@@ -97,12 +97,12 @@ int main(void)
 			{
 				alignment = cv::Mat(cv::Size(color_calibration.resolution_width, color_calibration.resolution_height), CV_16UC1);
 				aligner.align_depth_to_color((ushort*)alignment.data, (ushort*)distorted_depthFrame.data, depth_scale, calibration);			
-				cv::imshow("ALIGN", alignment * depth_sacle_for_visualization);
+				cv::imshow("ALIGN", alignment * depth_scale_for_visualization);
 			}
 
 			
 			cv::imshow("COLOR", distorted_colorFrame);
-			cv::imshow("DEPTH", distorted_depthFrame * depth_sacle_for_visualization);
+			cv::imshow("DEPTH", distorted_depthFrame * depth_scale_for_visualization);
 
 		}
 
